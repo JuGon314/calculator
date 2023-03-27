@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="calculator" name="calc">
+            <input type="text" class="value" name="txt" id="nice">
+            <span class="num clear" onclick="calc.txt.value = '' ">C</span>
+            <span class="num" onclick="document.getElementById('nice').value += '/' ">/</span>
+            <span class="num" onclick="document.getElementById('nice').value += '*' ">*</span>
+            <span class="num" onclick="document.getElementById('nice').value += '7' ">7</span>
+            <span class="num" onclick="document.getElementById('nice').value += '8' ">8</span>
+            <span class="num" onclick="document.getElementById('nice').value += '9' ">9</span>
+            <span class="num" onclick="document.getElementById('nice').value += '-' ">-</span>
+            <span class="num" onclick="document.getElementById('nice').value += '4' ">4</span>
+            <span class="num" onclick="document.getElementById('nice').value += '5' ">5</span>
+            <span class="num" onclick="document.getElementById('nice').value += '6' ">6</span>
+            <span class="num plus" onclick="document.getElementById('nice').value += '+' ">+</span>
+            <span class="num" onclick="document.getElementById('nice').value += '1' ">1</span>
+            <span class="num" onclick="document.getElementById('nice').value += '2' ">2</span>
+            <span class="num" onclick="document.getElementById('nice').value += '3' ">3</span>
+            <span class="num" onclick="document.getElementById('nice').value += '0' ">0</span>
+            <span class="num" onclick="document.getElementById('nice').value += '00' ">00</span>
+            <span class="num" onclick="document.getElementById('nice').value += '.' ">.</span>
+            <span class="num equal" onclick="document.getElementById('nice').value = eval(calc.txt.value)">=</span>
+        </form>
+    </div>
+</body>
+</html>
